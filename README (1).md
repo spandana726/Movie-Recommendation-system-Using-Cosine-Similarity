@@ -7,7 +7,7 @@ This project is a **Streamlit-powered web application** that recommends movies s
 
 ---
 
-## 🧠 What is a Recommendation System?
+## What is a Recommendation System?
 
 A **Recommendation System** suggests items (like movies, music, books) to users by analyzing their past behaviors, preferences, or demographic similarities with others. It works using **Artificial Intelligence** models that rely on content metadata and user interactions.
 
@@ -37,7 +37,7 @@ A **Recommendation System** suggests items (like movies, music, books) to users 
 
 ---
 
-## 🎯 About This Project
+## About This Project
 
 This is a **movie recommendation web app** built using **Python**, **Streamlit**, and **Cosine Similarity**.
 
@@ -48,9 +48,9 @@ This is a **movie recommendation web app** built using **Python**, **Streamlit**
 
 ---
 
-## 🧪 Machine Learning Concept Used
+## Machine Learning Concept Used
 
-### ✅ Cosine Similarity
+### Cosine Similarity
 
 - A metric to measure the **similarity between two vectors**.
 - Returns value between **0 (completely different)** and **1 (completely similar)**.
@@ -67,36 +67,36 @@ This is a **movie recommendation web app** built using **Python**, **Streamlit**
 
 ---
 
-## ⚙️ How to Run the Project Locally
+## How to Run the Project Locally
 
-### 🔁 Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/spandana726/Movie-Recommendation-system-Using-Cosine-Similarity.git
 cd Movie-Recommendation-system-Using-Cosine-Similarity
 ```
 
-### 🧪 Step 2: Create a Virtual Environment
+### Step 2: Create a Virtual Environment
 
 ```bash
 conda create -n movie python=3.7.10 -y
 conda activate movie
 ```
 
-### 📦 Step 3: Install Dependencies
+### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 📊 Step 4: Generate the Model
+### Step 4: Generate the Model
 
 ```bash
 # Run the data analysis and vectorizer code to create similarity matrix
 jupyter notebook "Movie Recommender System Data Analysis.ipynb"
 ```
 
-### 🚀 Step 5: Launch the App
+### Step 5: Launch the App
 
 ```bash
 streamlit run app.py
@@ -104,7 +104,7 @@ streamlit run app.py
 
 ---
 
-## 📸 Demo Outputs
+## Demo Outputs
 
 ### 👇 Screenshots of the Working Web App
 
@@ -133,15 +133,7 @@ streamlit run app.py
 📧 Email: 227r1a66f7@cmrtc.ac.in  
 💼 GitHub: [@spandana726](https://github.com/spandana726)
 
----
-
-## 🌟 Give This Repo a Star!
-
-If you liked the project, show your support by giving it a ⭐ on GitHub!
-
----
-
-## 📢 Future Improvements
+## Future Improvements
 
 - Add TMDb API integration for dynamic metadata updates
 - Include hybrid filtering logic using user ratings
