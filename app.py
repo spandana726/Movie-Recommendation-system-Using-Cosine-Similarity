@@ -1,26 +1,14 @@
-'''
-Author: Bappy Ahmed (Updated by ChatGPT)
-Email: entbappy73@gmail.com
-Date: 2021-Nov-15 (Updated to OMDb on 2025-07-07)
-'''
-
 import pickle
 import streamlit as st
 import requests
 import os
 
-# ✅ Use a persistent session for faster requests
 session = requests.Session()
-
-# ✅ OMDb API Key (Your key)
 OMDB_API_KEY = "9436b3db"
-
-# ✅ Optional: Manual fixes for title mismatches (you can expand this)
 manual_title_fixes = {
     "Aliens vs Predator: Requiem": "AVPR: Aliens vs Predator - Requiem"
 }
 
-# ✅ Fetch poster using OMDb (faster and reliable)
 def fetch_poster(title):
     title_query = manual_title_fixes.get(title, title)
     try:
@@ -35,7 +23,6 @@ def fetch_poster(title):
         pass
     return "https://via.placeholder.com/500x750?text=No+Image"
 
-# ✅ Recommend function (unchanged)
 def recommend(movie, movies, similarity):
     idx = movies[movies['title'] == movie].index[0]
     dist = sorted(enumerate(similarity[idx]), key=lambda x: x[1], reverse=True)
@@ -46,7 +33,6 @@ def recommend(movie, movies, similarity):
         posters.append(fetch_poster(t))
     return names, posters
 
-# ✅ Streamlit UI
 def main():
     st.set_page_config(page_title="🎬 Movie Recommender", layout="wide")
     st.header('🎬 Movie Recommender System Using Machine Learning')
